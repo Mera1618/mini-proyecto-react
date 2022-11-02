@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Lista from './componentes/lista';
+import FeecodeCampLogo from "./img/freecodecamp-logo.png";
+import { GiAbstract058 } from "react-icons/gi";
+import { render } from 'react-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className='App'>
+      <GiAbstract058/>
+      <div className='freecodecamp-logo-contenedor'>
+        <img src={FeecodeCampLogo} className='freecodecamp-logo'/>
+        <h1 id='titulo'>Escribe tus tareas</h1>
+      </div>
+      <Lista/>
     </div>
   );
 }
